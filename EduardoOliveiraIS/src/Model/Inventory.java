@@ -10,7 +10,7 @@ import javafx.collections.ObservableList;
 
 /**
  *
- * @author Eduardo
+ * @author Eduardo Oliveira
  */
 public class Inventory {
     
