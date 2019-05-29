@@ -17,15 +17,5 @@ public class Inventory {
     private static final ObservableList<Products> PRODUCT = FXCollections.observableArrayList();
     private static final ObservableList<AllParts> PART = FXCollections.observableArrayList();
 
-    private static class Products {
 
-        public Products() {
-        }
-    }
-
-    private static class AllParts {
-
-        public AllParts() {
-        }
-    }
 }
