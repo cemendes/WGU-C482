@@ -5,6 +5,8 @@
  */
 package Main;
 
+import Model.*;
+import java.util.ArrayList;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
@@ -29,6 +31,18 @@ public class Main extends Application {
     }
  
 public static void main(String[] args) {
-    launch(args);
+   // launch(args);
+   
+   //Part[] partArray = new Part[10];
+ //  System.out.println(partArray);
+ 
+   Inventory inv = new Inventory();
+   
+   inv.addProduct(1,"Tire",52.00,1,50,100);
+   
+//      ArrayList<int> list = new ArrayList<int>();
+//      list.add("A");
+//      list.add("B");
+//      System.out.println(list);
 }
 }

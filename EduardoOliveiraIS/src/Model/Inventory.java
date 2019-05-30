@@ -14,8 +14,22 @@ import javafx.collections.ObservableList;
  */
 public class Inventory {
     
-    private static final ObservableList<Products> PRODUCT = FXCollections.observableArrayList();
-    private static final ObservableList<AllParts> PART = FXCollections.observableArrayList();
+    //Defining properties
+    Product[] products = new Product[10];
+    Part[] allParts = new Part[10];
 
+    public Inventory() {
+    }
+    
+    public void addProduct(int productID, String name, double price, int inStock, int min, int max) {
+        Product p = new Product(productID, name, price, inStock, min, max);
+        System.out.println(p);
+        
+    }
+
+    @Override
+    public String toString() {
+        return "Inventory{" + "products=" + products + ", allParts=" + allParts + '}';
+    }
 
 }

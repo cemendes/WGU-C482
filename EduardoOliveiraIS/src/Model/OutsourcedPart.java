@@ -9,6 +9,25 @@ package Model;
  *
  * @author Eduardo
  */
-public class OutsourcedPart {
+public class OutsourcedPart extends Part {
+    
+    //Defining property
+    String companyName;
+
+    public OutsourcedPart(String companyName, int partID, String name, double price, int inStock, int min, int max) {
+        super(partID, name, price, inStock, min, max);
+        this.companyName = companyName;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+    
+    
+    
     
 }

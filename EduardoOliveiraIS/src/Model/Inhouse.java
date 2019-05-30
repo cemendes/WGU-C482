@@ -9,6 +9,27 @@ package Model;
  *
  * @author Eduardo
  */
-public class Inhouse {
+public class Inhouse extends Part {
+    
+    //Setting property
+    int machineID;
+
+    //Constructor
+    public Inhouse(int machineID, int partID, String name, double price, int inStock, int min, int max) {
+        super(partID, name, price, inStock, min, max);
+        this.machineID = machineID;
+    }
+    
+    //Getters and setters
+    public int getMachineID() {
+        return machineID;
+    }
+
+    public void setMachineID(int machineID) {
+        this.machineID = machineID;
+    }
+    
+    
+    
     
 }
